@@ -1,20 +1,53 @@
-Bulk DNS Editor for Cloudflare
-This project is a lightweight tool that uses the Cloudflare API to quickly find and update DNS records across all zones in your account.
+# 🌐 Bulk DNS Editor for Cloudflare
 
-It’s designed to simplify large-scale DNS changes — like replacing IPs or modifying record types — without needing to click through every domain manually in the dashboard.
+A simple tool that uses the Cloudflare API to find and bulk-edit DNS records across all your zones. Great for quickly replacing IPs or updating records without digging through each domain manually. Built with Python and designed for speed and simplicity.
 
-Perfect for MSPs, sysadmins, or anyone managing a bunch of domains and looking to save time.
+---
 
-🔧 Built with Python, with a simple and functional UI for batch editing.
+## 🧰 Features
 
-🚀 Features:
+- Search for DNS records by IP or name
+- View and filter results across all zones
+- Select records to update in bulk
+- Replace values with a new IP or content
+- Fast, local, and easy to use
+- Designed for sysadmins, MSPs, and automation fans
 
-Search for DNS records by IP or name
+---
 
-View and filter results across all zones
+## 🧪 How to Use
 
-Select records to update in bulk
+1. **Download** this repository to your system.
+2. Make sure **Python** is installed.
+3. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the app:
+   ```bash
+   python app.py
+   ```
+5. Open your browser and go to:
+   ```
+   http://127.0.0.1:5000
+   ```
 
-Replace values with a new IP or content
+6. Paste in your **Cloudflare API key**.
+7. Enter the **IP address** you want to search for.
+8. Click **Search** — the app will scan all zones for matching records.
+9. A table will appear where you can **bulk edit** records as needed.
 
-Designed to be easy to extend and customize
+---
+
+## ⚠️ Note
+
+This runs locally and is intended for internal use. Avoid exposing it directly to the internet unless properly secured.
+
+---
+
+## 📌 Coming Soon
+
+- UI polish and advanced filtering
+- Token scope validation
+- CLI version
+- Prebuilt Docker Container
